@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.globo-sites-bar{
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.nav-globo-sites ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-globo-sites ul a{
+    display: block;
+    padding: 10px 8px;
+}
+
+.nav-globo-sites ul a:hover{
+    border-bottom: 2px solid;
+}
+
+#link-globo{
+    color: #0669DE;
+}
+
+#link-g1{
+    color: #C4170C;
+}
+
+#link-ge{
+    color: #06AA48;
+}
+
+#link-gshow{
+    color: #FF6700;
+}
+
+#link-globoplay{
+    color: #FB0334;
+}
+
+#link-o-globo{
+    color: #1E4C9A;
+}
+
+#link-guia-compras{
+    color: #C4170C;
+}
+
+.nav-conta ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-conta ul a{
+    display: block;
+    padding: 10px 0;
+}
+
+.nav-conta ul a:hover{
+    fill: #0669DE;
+    color: #0669DE;
+}
+
+#link-conta-globo svg{
+    margin-right: 10px;
+}
