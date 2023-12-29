@@ -32,7 +32,7 @@ a{
 
 .nav-globo-sites ul a{
     display: block;
-    padding: 10px 8px;
+    padding: 15px 10px;
 }
 
 .nav-globo-sites ul a:hover{
@@ -75,7 +75,7 @@ a{
 
 .nav-conta ul a{
     display: block;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .nav-conta ul a:hover{
@@ -85,4 +85,114 @@ a{
 
 #link-conta-globo svg{
     margin-right: 10px;
+}
+
+.logo-bar{
+    height: 74px;
+    background-color: #C4170C;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+}
+
+.conteudo-logo-bar{
+    max-width: 1360px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-icon{
+    width: 300px;
+}
+
+.menu-icon a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.menu-icon svg{
+    fill: white;
+}
+
+.menu-icon span{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+
+/*Criando sub-menu*/
+/*.sub-menu{
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    border-right: 1px solid red;
+}*/
+
+.g1-logo svg{
+    height: 42px;
+}
+
+.busca{
+    width: 300px;
+    display: flex;
+    justify-content: end;
+}
+
+.busca form{
+    background-color: #a6130a;
+    border-radius: 5px;
+}
+
+.busca fieldset{
+    border: none;
+    position: relative;
+}
+
+.busca label{
+    padding: 8px 0 8px 8px;
+    position: absolute;
+    left: 0;
+}
+
+.busca label svg{
+    fill: white;
+}
+
+.busca-input{
+    background-color: #a6130a;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 8px 8px 8px 40px;
+    width: 150px;
+    transition: all .5s;
+}
+
+.busca-input::placeholder{
+    color: white;
+}
+
+.busca-input:focus{
+    width: 250px;
+    outline: none;
+    background-color: white;
+}
+
+.busca-input:focus + label svg, .busca-input:focus::placeholder{
+    fill: #888;
+    color: #888;
 }
