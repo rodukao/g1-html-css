@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Ubuntu:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,11 +9,16 @@
 body{
     display: flex;
     flex-direction: column;
+    background-color: #f9f9f9;
 }
 
 a{
     color: inherit;
     text-decoration: none;
+}
+
+header{
+    height: 128px;
 }
 
 .globo-sites-bar{
@@ -91,8 +96,8 @@ a{
     height: 74px;
     background-color: #C4170C;
     position: absolute;
-    width: 100%;
     top: 50px;
+    width: 100%;
 }
 
 .conteudo-logo-bar{
@@ -112,7 +117,6 @@ a{
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-left: 10px;
 }
 
 .menu-icon svg{
@@ -125,7 +129,9 @@ a{
     color: white;
 }
 
+/*Criando sub-menu*/
 .overlay{
+    display: none;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -135,8 +141,8 @@ a{
     z-index: 2;
 }
 
-/*Criando sub-menu*/
 .sub-menu{
+    display: none;
     width: 270px;
     height: 100%;
     position: fixed;
@@ -157,7 +163,7 @@ a{
 }
 
 .sub-menu-ul li{
-    padding: 6px;
+    padding: 6px 16px;
 }
 
 .sub-menu-ul a{
@@ -170,20 +176,22 @@ a{
 .acesse-icon{
     width: 20px;
     height: 20px;
-    background-color: #666;
+    background-color: #999;
     padding: 4px;
     border-radius: 50%;
 }
 
 .acesse-conta-sub-menu{
-    padding: 30px;
+    list-style: none;
+    padding: 30px 20px 30px 20px;
 }
 
-.acesse-conta-sub-menu li{
+.acesse-conta-sub-menu li a{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     line-height: .9em;
+    padding: 5px 0;
 }
 
 .acesse-conta-sub-menu li div{
@@ -191,21 +199,23 @@ a{
     flex-direction: column;
 }
 
-.acesse-conta-sub-menu span{
-}
-
 .acesse-span{
-    color: red;
-    font-size: .9em;
+    color: #C4170C;
+    font-size: .8em;
     font-weight: bold;
+    letter-spacing: 0;
 }
 
 .acesse-cadastre{
-    font-size: .8em;
+    font-size: .6em;
+    letter-spacing: 0;
     color: #666;
 }
 
-
+.grupo-globo{
+    color: #666;
+    font-size: .8em;
+}
 
 .g1-logo svg{
     height: 42px;
@@ -264,4 +274,114 @@ a{
 .busca-input:focus + label svg, .busca-input:focus::placeholder{
     fill: #888;
     color: #888;
+}
+
+.header-ads{
+    width: 970px;
+    height: 150px;
+    background-color: #999;
+    margin: 2.5em auto;
+}
+
+.main-noticias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+    max-width: 85%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.main-noticias article{
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.main-noticias p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.noticia-principal{
+    grid-row: 1/3;
+}
+
+.noticia-principal div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.noticia-principal h2{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-size: 2em;
+    color: #C4170C;
+}
+
+.noticia-principal .link-relacionado{
+    color: #C4170C;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 0 0 20px;
+    position: relative;
+}
+
+.noticia-principal .link-relacionado::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.news-col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 100%;
+    background-position: center;
+    transition: all .5s;
+}
+
+.news-col2:hover{
+    background-size: 110%;
+}
+
+.news-01{
+    background-image: url('../img/news-thumbs/news-01.webp');
+}
+
+.news-02{
+    background-image: url('../img/news-thumbs/news-02.webp');
+}
+
+.news-col2 h2{
+    text-shadow: 0 1px 3px rgba(0,0,0,.8);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.news-col2 p{
+    color: white;
+}
+
+.main-site{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 85%;
+    margin: 0 auto;
 }
