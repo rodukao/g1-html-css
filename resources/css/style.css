@@ -384,4 +384,88 @@ header{
     grid-template-columns: 2fr 1fr;
     width: 85%;
     margin: 0 auto;
+    gap: 40px;
 }
+
+.noticias article{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 20px 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.noticias article img{
+    border-radius: 15px;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.noticias-meta h2{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #C4170C;
+    padding-bottom: 10px;
+}
+
+.noticias-meta h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #333;
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+
+.noticias-meta p{
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    font-size: .95em;
+    padding-bottom: 10px;
+}
+
+.noticias-meta span{
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    font-size: .8em;
+}
+
+.viu-isso-aqui{
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.viu-isso-aqui article{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.viu-isso-aqui h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.viu-isso-aqui h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #C4170C;
+}
+
+.viu-isso-aqui img{
+    border-radius: 15px;
+}
+
