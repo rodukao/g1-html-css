@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Ubuntu:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -119,24 +119,93 @@ a{
     fill: white;
 }
 
-.menu-icon span{
+.menu-span{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     color: white;
 }
 
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+}
 
 /*Criando sub-menu*/
-/*.sub-menu{
-    width: 400px;
+.sub-menu{
+    width: 270px;
     height: 100%;
     position: fixed;
     background-color: white;
     top: 0;
     left: 0;
     z-index: 3;
-    border-right: 1px solid red;
-}*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.20em;
+    font-weight: 300;
+    letter-spacing: -1px;
+    overflow-y: scroll;
+}
+
+.sub-menu-ul{
+    padding: 24px 0 24px 4px;
+    border-bottom: 1px solid #eee;
+}
+
+.sub-menu-ul li{
+    padding: 6px;
+}
+
+.sub-menu-ul a{
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acesse-icon{
+    width: 20px;
+    height: 20px;
+    background-color: #666;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.acesse-conta-sub-menu{
+    padding: 30px;
+}
+
+.acesse-conta-sub-menu li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    line-height: .9em;
+}
+
+.acesse-conta-sub-menu li div{
+    display: flex;
+    flex-direction: column;
+}
+
+.acesse-conta-sub-menu span{
+}
+
+.acesse-span{
+    color: red;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.acesse-cadastre{
+    font-size: .8em;
+    color: #666;
+}
+
+
 
 .g1-logo svg{
     height: 42px;
