@@ -288,8 +288,10 @@ header{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 12px;
-    max-width: 85%;
-    height: 90vh;
+    max-width: 1100px;
+    width: 85%;
+    height: 700px;
+    max-height: 90vh;
     margin: 0 auto;
 }
 
@@ -383,6 +385,7 @@ header{
     display: grid;
     grid-template-columns: 2fr 1fr;
     width: 85%;
+    max-width: 1150px;
     margin: 0 auto;
     gap: 40px;
 }
@@ -393,6 +396,10 @@ header{
     grid-template-columns: 1fr 1fr;
     padding: 30px 20px 30px 0;
     border-bottom: 1px solid #ddd;
+}
+
+.noticias article:last-of-type{
+    border-bottom: none;
 }
 
 .noticias article img{
@@ -409,6 +416,10 @@ header{
     letter-spacing: -1px;
     color: #C4170C;
     padding-bottom: 10px;
+}
+
+.noticias-meta h2:hover{
+    color: #a6130a;
 }
 
 .noticias-meta h3{
@@ -432,31 +443,72 @@ header{
     font-size: .8em;
 }
 
-.viu-isso-aqui{
+.veja-mais{
+    background-color: #C4170C;
+    color: white;
+    border: none;
+    border-bottom: 3px solid #a6130a;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.side-card{
     width: 100%;
     background-color: white;
-    border-radius: 20px;
     border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
-.viu-isso-aqui article{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-.viu-isso-aqui h2{
+.card-header{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #333;
-    font-size: 1em;
+    font-size: .7em;
+    padding: 20px 7.5%;
     border-bottom: 1px solid #ddd;
-    padding: 20px;
 }
 
-.viu-isso-aqui h3{
+.side-card article{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+}
+
+.side-card article:last-of-type{
+    border-bottom: none;
+}
+
+.card-footer h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #C4170C;
+    font-size: .9em;
+    padding: 20px 7.5%;
+    border-top: 1px solid #ddd;
+    letter-spacing: -1px;
+}
+
+.card-footer h2::after{
+    content: url(../img/arrow-down.svg);
+    width: 10px;
+    height: 10px;
+    padding-left: 10px;
+}
+
+.card-footer:hover{
+    color: #a6130a;
+}
+
+.side-card h3{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     line-height: 1.2em;
@@ -465,7 +517,69 @@ header{
     color: #C4170C;
 }
 
-.viu-isso-aqui img{
+.side-card h3:hover{
+    color: #a6130a;
+}
+
+.side-card img{
     border-radius: 15px;
 }
 
+.rodape{
+    width: 100%;
+    height: 150px;
+    background-color: #C4170C;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-top{
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.g1-logo-footer{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-ultimas{
+    color: white;
+    font-size: .85em;
+    font-weight: 500;
+}
+
+.footer-bottom{
+    width: 100%;
+    max-width: 1120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: .75em;
+    color: white;
+}
+
+.footer-bottom li{
+    display: inline;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.footer-bottom li::after{
+    content: "|";
+    padding: 0 2px;
+    font-weight: 300;
+}
+
+.footer-bottom li:last-child::after{
+    content: "";
+}
